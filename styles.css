@@ -5,7 +5,7 @@
   --accent-glow: rgba(198, 166, 109, .28);
   --line: rgba(241, 138, 255, 0.2);
   --serif: "Coolvetica", sans-serif;
-  --sans: "DM Sans", Arial, sans-serif;
+  --sans: Arial, Helvetica, sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
