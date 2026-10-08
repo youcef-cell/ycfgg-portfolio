@@ -25,7 +25,7 @@ nav a:hover::after { right: 0; }
 .hero { min-height: calc(100vh - 88px); padding: 7vw 4vw 4vw; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: clamp(3rem, 7vw, 8rem); align-items: center; overflow: hidden; color: var(--paper); }
 .hero-copy { position: relative; z-index: 1; }
 .eyebrow { margin: 0 0 2rem; font-size: .72rem; text-transform: uppercase; letter-spacing: .18em; }
-h1, h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: .02em; line-height: .88; }
+h1, h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: .04em; line-height: .88; }
 h1 { font-size: clamp(5rem, 10vw, 10rem); }
 h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .hero-bottom { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-top: 5rem; }
@@ -39,30 +39,25 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .work { padding: 10rem 4vw; color: var(--paper); background: transparent; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 7rem; }
 .section-heading h2 { font-size: clamp(3.2rem, 7vw, 7rem); text-shadow: 0 2px 12px rgba(0,0,0,.45); }
-.project-carousel { position: relative; max-width: 680px; margin-inline: auto; }
-.carousel-viewport { overflow: hidden; border-radius: 2rem; perspective: 1400px; }
-.carousel-track { display: flex; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.22,.72,.2,1); will-change: transform; }
-.project-slide { flex: 0 0 100%; margin: 0; padding: 1rem; transform-style: preserve-3d; }
-.project-image { position: relative; width: 100%; aspect-ratio: 4 / 3; padding: 0; overflow: hidden; border: 1px solid rgba(243,240,233,.22); border-radius: 1.5rem; background: rgba(23,23,20,.3); cursor: zoom-in; transform: rotateY(-1.5deg) translateZ(18px); transform-style: preserve-3d; transition: box-shadow .4s ease, transform .4s ease; }
-.project-image img { height: 100%; object-fit: contain; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
-.project-image:hover { transform: translateY(-4px) translateZ(45px) rotateY(0deg); box-shadow: 0 24px 65px var(--accent-glow), 0 20px 55px rgba(0,0,0,.38); }
-.project-image:hover img { transform: scale(1.025); filter: saturate(.8); }
-.video-card { width: 100%; margin-inline: auto; cursor: default; background: #080808; }
-.video-card video { width: 100%; height: 100%; display: block; object-fit: contain; background: #080808; }
+.gallery { display: grid; grid-template-columns: repeat(12, 1fr); gap: 7rem 2rem; align-items: start; }
+.project { margin: 0; }
+.project--wide { grid-column: span 7; }
+.project--tall { grid-column: span 5; }
+.project--video { grid-column: span 4; }
+.project--tall:nth-child(2), .project--tall:nth-child(6) { margin-top: 8rem; }
+.project-image { position: relative; width: 100%; aspect-ratio: 4 / 3; padding: 0; overflow: hidden; border: 0; border-radius: 4px; background: transparent; cursor: zoom-in; transition: box-shadow .4s ease, transform .4s ease; }
+.project--tall .project-image, .project--video .project-image { aspect-ratio: 9 / 16; }
+.project-image img { height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
+.project-image:hover { transform: translateY(-6px); box-shadow: 0 24px 65px var(--accent-glow), 0 20px 55px rgba(0,0,0,.38); }
+.project-image:hover img { transform: scale(1.035); filter: saturate(.8); }
+.video-card { width: min(100%, 480px); margin-inline: auto; cursor: default; background: #080808; }
+.video-card video { width: 100%; height: 100%; display: block; object-fit: cover; background: #080808; }
 .view { position: absolute; inset: auto 1.2rem 1.2rem auto; display: flex; align-items: center; gap: 1rem; padding: .8rem 1rem; border-radius: 999px; background: var(--paper); color: var(--ink); font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; transform: translateY(70px); transition: transform .35s ease; }
 .project-image:hover .view, .project-image:focus-visible .view { transform: translateY(0); }
-figcaption { display: flex; gap: 1.5rem; padding: .7rem .75rem 0; }
+figcaption { display: flex; gap: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); margin-top: 1rem; }
 figcaption > span { font-size: .7rem; color: var(--accent); }
 figcaption h3 { margin: 0 0 .3rem; font-family: var(--serif); font-size: 1.5rem; }
 figcaption p { margin: 0; color: rgba(243,240,233,.68); font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; }
-.carousel-controls { display: flex; align-items: center; justify-content: center; gap: .8rem; margin-top: .75rem; }
-.carousel-button { width: 42px; height: 42px; border: 1px solid rgba(243,240,233,.3); border-radius: 50%; background: transparent; cursor: pointer; transition: background .25s ease, color .25s ease, transform .25s ease; }
-.carousel-button:hover { background: var(--paper); color: var(--ink); transform: scale(1.06); }
-.carousel-button:focus-visible, .project-image:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.carousel-dots { display: flex; gap: .55rem; }
-.carousel-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(243,240,233,.35); cursor: pointer; transition: width .25s ease, background .25s ease; }
-.carousel-dot.is-active { width: 28px; border-radius: 999px; background: var(--accent); }
-.carousel-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
 .about { padding: 12rem 4vw; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: rgba(243,240,233,.94); color: var(--ink); }
 .about .eyebrow { grid-column: 1; }
 .about h2 { grid-column: 1 / -1; font-size: clamp(3.5rem, 8vw, 8rem); }
@@ -101,11 +96,10 @@ footer div { display: flex; gap: 2rem; }
   .hero-caption { left: 1.4rem; right: 1.4rem; bottom: 1.4rem; }
   .work { padding-top: 7rem; padding-bottom: 7rem; }
   .section-heading { display: block; margin-bottom: 4rem; }
-  .carousel-viewport { border-radius: 1.25rem; }
-  .project-slide { padding: .5rem; }
-  .project-image { border-radius: 1rem; }
+  .gallery { display: block; }
+  .project { margin-bottom: 5rem; }
+  .project--tall:nth-child(2), .project--tall:nth-child(6) { margin-top: 0; }
   .view { transform: none; }
-  .carousel-controls { margin-top: .5rem; }
   .about { display: block; padding-top: 8rem; padding-bottom: 8rem; }
   .about h2 { margin-bottom: 4rem; }
   .about-copy { margin-top: 0; }
