@@ -39,7 +39,7 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .work { padding: 10rem 4vw; color: var(--paper); background: transparent; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 7rem; }
 .section-heading h2 { font-size: clamp(3.2rem, 7vw, 7rem); text-shadow: 0 2px 12px rgba(0,0,0,.45); }
-.project-carousel { position: relative; max-width: 980px; margin-inline: auto; }
+.project-carousel { position: relative; max-width: 680px; margin-inline: auto; }
 .carousel-viewport { overflow: hidden; border-radius: 2rem; perspective: 1400px; }
 .carousel-track { display: flex; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.22,.72,.2,1); will-change: transform; }
 .project-slide { flex: 0 0 100%; margin: 0; padding: 1rem; transform-style: preserve-3d; }
