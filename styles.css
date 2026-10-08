@@ -44,11 +44,11 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .carousel-track { display: flex; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.22,.72,.2,1); will-change: transform; }
 .project-slide { flex: 0 0 100%; margin: 0; padding: 1rem; transform-style: preserve-3d; }
 .project-image { position: relative; width: 100%; aspect-ratio: 4 / 3; padding: 0; overflow: hidden; border: 1px solid rgba(243,240,233,.22); border-radius: 1.5rem; background: rgba(23,23,20,.3); cursor: zoom-in; transform: rotateY(-1.5deg) translateZ(18px); transform-style: preserve-3d; transition: box-shadow .4s ease, transform .4s ease; }
-.project-image img { height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
+.project-image img { height: 100%; object-fit: contain; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
 .project-image:hover { transform: translateY(-4px) translateZ(45px) rotateY(0deg); box-shadow: 0 24px 65px var(--accent-glow), 0 20px 55px rgba(0,0,0,.38); }
 .project-image:hover img { transform: scale(1.025); filter: saturate(.8); }
 .video-card { width: 100%; margin-inline: auto; cursor: default; background: #080808; }
-.video-card video { width: 100%; height: 100%; display: block; object-fit: cover; background: #080808; }
+.video-card video { width: 100%; height: 100%; display: block; object-fit: contain; background: #080808; }
 .view { position: absolute; inset: auto 1.2rem 1.2rem auto; display: flex; align-items: center; gap: 1rem; padding: .8rem 1rem; border-radius: 999px; background: var(--paper); color: var(--ink); font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; transform: translateY(70px); transition: transform .35s ease; }
 .project-image:hover .view, .project-image:focus-visible .view { transform: translateY(0); }
 figcaption { display: flex; gap: 1.5rem; padding: .7rem .75rem 0; }
