@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My edits portfolio page featuring selected motion work.">
+  <title>My Edits</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=coolvetica@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=267da24">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Home">A<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#creative">Creative</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-cta" href="edits.html">My Edits</a>
+    </nav>
+  </header>
+
+  <main class="edits-page">
+    <section class="edits-hero">
+      <p class="eyebrow">Selected edits</p>
+      <h1>My <em>Edits</em></h1>
+      <p class="edits-intro">A curated selection of motion-focused pieces shaped through atmosphere, pacing, and storytelling.</p>
+    </section>
+
+    <section class="edits-grid" aria-label="Motion edits">
+      <article class="edit-card">
+        <div class="edit-card__meta">
+          <span>01</span>
+          <div>
+            <h2>Story Matters</h2>
+            <p>Film · Brand story · 2026</p>
+          </div>
+        </div>
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/storymatters.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+
+      <article class="edit-card">
+        <div class="edit-card__meta">
+          <span>02</span>
+          <div>
+            <h2>Creative Reel</h2>
+            <p>Motion · Showreel · 2026</p>
+          </div>
+        </div>
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/wreel_1_1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Creative Portfolio</p>
+    <div class="social-links">
+      <a class="social-link" href="https://www.instagram.com/abderrahmen_youcef/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/></svg><span>Instagram</span></a>
+      <a class="social-link" href="https://www.linkedin.com/in/youcef-abr-a746243a0/?isSelfProfile=true" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.9 5.4a1.56 1.56 0 0 1 .04 3.1zM5.5 9.72h2.9v9.78H5.5zm5.03 0h2.78v1.34h.04c.39-.74 1.34-1.52 2.76-1.52 2.95 0 3.5 1.94 3.5 4.46v6.5h-2.9v-6.08c0-1.45-.03-3.32-2.03-3.32-2.03 0-2.34 1.58-2.34 3.21v6.19h-2.9z"/></svg><span>LinkedIn</span></a>
+    </div>
+    <a href="index.html">Back to home ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
