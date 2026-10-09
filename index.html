@@ -18,7 +18,7 @@
     <a class="brand" href="#top" aria-label="Home">A<span>.</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
     <nav id="main-navigation" aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#creative">Creative</a><a href="#about">About</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -34,7 +34,7 @@
       </div>
       <div class="hero-media" aria-label="Featured creative project">
         <img src="images/project-1.jpg" alt="Featured creative project">
-        <div class="hero-caption"><span>Featured work</span><span>01 / 08</span></div>
+        <div class="hero-caption"><span>Featured work</span><span>01 / 06</span></div>
       </div>
     </section>
 
@@ -43,15 +43,41 @@
         <p class="eyebrow">Selected projects</p>
         <h2 id="work-title">A collection of<br>creative stories.</h2>
       </div>
-      <div class="gallery">
-        <figure class="project project--wide"><button class="project-image" type="button" data-image="images/project-1.jpg"><img src="images/project-1.jpg" alt="Portfolio project 1"><span class="view">View project <b>↗</b></span></button><figcaption><span>01</span><div><h3>Project One</h3><p>Brand identity · Art direction</p></div></figcaption></figure>
-        <figure class="project project--tall"><button class="project-image" type="button" data-image="images/project-2.jpg"><img src="images/project-2.jpg" alt="Portfolio project 2"><span class="view">View project <b>↗</b></span></button><figcaption><span>02</span><div><h3>Project Two</h3><p>Editorial · Campaign</p></div></figcaption></figure>
-        <figure class="project project--tall"><button class="project-image" type="button" data-image="images/project-3.jpg"><img src="images/project-3.jpg" alt="Portfolio project 3"><span class="view">View project <b>↗</b></span></button><figcaption><span>03</span><div><h3>Project Three</h3><p>Digital experience · UI</p></div></figcaption></figure>
-        <figure class="project project--wide"><button class="project-image" type="button" data-image="images/project-4.jpg"><img src="images/project-4.jpg" alt="Portfolio project 4"><span class="view">View project <b>↗</b></span></button><figcaption><span>04</span><div><h3>Project Four</h3><p>Packaging · Illustration</p></div></figcaption></figure>
-        <figure class="project project--wide"><button class="project-image" type="button" data-image="images/project-5.jpg"><img src="images/project-5.jpg" alt="Portfolio project 5"><span class="view">View project <b>↗</b></span></button><figcaption><span>05</span><div><h3>Project Five</h3><p>Motion · Social media</p></div></figcaption></figure>
-        <figure class="project project--tall"><button class="project-image" type="button" data-image="images/project-6.jpg"><img src="images/project-6.jpg" alt="Portfolio project 6"><span class="view">View project <b>↗</b></span></button><figcaption><span>06</span><div><h3>Project Six</h3><p>Brand strategy · Web</p></div></figcaption></figure>
-        <figure class="project project--video"><div class="project-image video-card"><video controls preload="metadata" playsinline aria-label="Story Matters video"><source src="videos/storymatters.mp4" type="video/mp4"></video></div><figcaption><span>07</span><div><h3>Story Matters</h3><p>Film · Brand story</p></div></figcaption></figure>
-        <figure class="project project--video"><div class="project-image video-card"><video controls preload="metadata" playsinline aria-label="Creative Reel video"><source src="videos/wreel_1_1.mp4" type="video/mp4"></video></div><figcaption><span>08</span><div><h3>Creative Reel</h3><p>Motion · Showreel</p></div></figcaption></figure>
+      <div class="project-carousel" aria-roledescription="carousel" aria-label="Selected projects" tabindex="0">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-1.jpg"><img src="images/project-1.jpg" alt="Portfolio project 1"><span class="view">View project <b>↗</b></span></button><figcaption><span>01</span><div><h3>Project One</h3><p>Brand identity · Art direction</p></div></figcaption></figure>
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-2.jpg"><img src="images/project-2.jpg" alt="Portfolio project 2"><span class="view">View project <b>↗</b></span></button><figcaption><span>02</span><div><h3>Project Two</h3><p>Editorial · Campaign</p></div></figcaption></figure>
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-3.jpg"><img src="images/project-3.jpg" alt="Portfolio project 3"><span class="view">View project <b>↗</b></span></button><figcaption><span>03</span><div><h3>Project Three</h3><p>Digital experience · UI</p></div></figcaption></figure>
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-4.jpg"><img src="images/project-4.jpg" alt="Portfolio project 4"><span class="view">View project <b>↗</b></span></button><figcaption><span>04</span><div><h3>Project Four</h3><p>Packaging · Illustration</p></div></figcaption></figure>
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-5.jpg"><img src="images/project-5.jpg" alt="Portfolio project 5"><span class="view">View project <b>↗</b></span></button><figcaption><span>05</span><div><h3>Project Five</h3><p>Motion · Social media</p></div></figcaption></figure>
+            <figure class="project-slide"><button class="project-image" type="button" data-image="images/project-6.jpg"><img src="images/project-6.jpg" alt="Portfolio project 6"><span class="view">View project <b>↗</b></span></button><figcaption><span>06</span><div><h3>Project Six</h3><p>Brand strategy · Web</p></div></figcaption></figure>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-button carousel-prev" type="button" aria-label="Previous project">←</button>
+          <div class="carousel-dots" aria-label="Choose a project"></div>
+          <button class="carousel-button carousel-next" type="button" aria-label="Next project">→</button>
+        </div>
+        <p class="carousel-status" aria-live="polite">Project 1 of 6</p>
+      </div>
+    </section>
+
+    <section class="creative" id="creative" aria-labelledby="creative-title">
+      <div class="creative-intro">
+        <p class="eyebrow">Creative motion · 02 films</p>
+        <h2 id="creative-title">Ideas in<br><em>motion.</em></h2>
+        <p>Stories shaped through rhythm, atmosphere, and visual direction. Each film is a different way of turning a concept into an experience.</p>
+      </div>
+      <div class="creative-grid">
+        <article class="motion-card motion-card--wide">
+          <div class="motion-frame"><video controls preload="metadata" playsinline poster="images/project-5.jpg"><source src="videos/storymatters.mp4" type="video/mp4"></video></div>
+          <div class="motion-meta"><span>01</span><div><h3>Story Matters</h3><p>Film · Brand story · 2026</p></div><span>Film</span></div>
+        </article>
+        <article class="motion-card motion-card--tall">
+          <div class="motion-frame"><video controls preload="metadata" playsinline poster="images/project-6.jpg"><source src="videos/wreel_1_1.mp4" type="video/mp4"></video></div>
+          <div class="motion-meta"><span>02</span><div><h3>Creative Reel</h3><p>Motion · Showreel · 2026</p></div><span>Reel</span></div>
+        </article>
       </div>
     </section>
 
@@ -64,11 +90,11 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow">Have a project in mind?</p>
       <h2 id="contact-title">Let’s make<br>something <em>remarkable.</em></h2>
-      <a href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+      <a href="mailto:youcef0012abdou@gmail.com">youcef0012abdou@gmail.com <span>↗</span></a>
     </section>
   </main>
 
-  <footer><p>© <span id="year"></span> Creative Portfolio</p><div><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></div><a href="#top">Back to top ↑</a></footer>
+  <footer><p>© <span id="year"></span> Creative Portfolio</p><div class="social-links"><a class="social-link" href="https://www.instagram.com/abderrahmen_youcef/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/></svg><span>Instagram</span></a><a class="social-link" href="#">Behance</a><a class="social-link" href="https://www.linkedin.com/in/youcef-abr-a746243a0/?isSelfProfile=true" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.9 5.4a1.56 1.56 0 0 1 .04 3.1zM5.5 9.72h2.9v9.78H5.5zm5.03 0h2.78v1.34h.04c.39-.74 1.34-1.52 2.76-1.52 2.95 0 3.5 1.94 3.5 4.46v6.5h-2.9v-6.08c0-1.45-.03-3.32-2.03-3.32-2.03 0-2.34 1.58-2.34 3.21v6.19h-2.9z"/></svg><span>LinkedIn</span></a></div><a href="#top">Back to top ↑</a></footer>
 
   <dialog class="lightbox" aria-label="Project image preview"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""></dialog>
   <script src="script.js"></script>
